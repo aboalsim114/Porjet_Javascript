@@ -9,4 +9,4 @@ Realiser par :
 * COYERE Leo
 * POUNGA MAZZELLA Christ Salvatore
 
-[Aller sur le site](http://gamezizen.byethost11.com/index.html)
+- vous pouvez voir un Demo du Projet  : [Aller sur le site](http://gamezizen.byethost11.com/index.html)
