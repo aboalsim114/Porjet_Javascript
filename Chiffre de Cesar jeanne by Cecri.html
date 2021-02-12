@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="PageDacceuil.css">
+	
+	    <style>
+	    	.cercle
+	    	{
+      		text-align: center;
+	    	}
+
+	    	.conteneur{
+          
+            }
+
+            .bloc
+            {
+            	text-align: center;
+                padding-top: 60px;
+
+            }
+            
+            .AZA
+            {
+            	
+                margin: 0px 10px;
+            }
+
+            .Bodyjeanne
+            {
+            background-image: url("arcade game 8.jpg");
+			background-attachment: scroll;
+			background-size: cover;
+            }
+
+            .QZA{
+            background-color: rgb(255,255,255,0.5);
+            border-radius: 2px;
+            box-shadow: 2px 2px 4px purple;
+            }
+            p
+            {
+            color: black;	
+            }
+
+                textarea{
+                border: 0.5rem solid rgb(204, 94, 186,0.2);
+                border-radius: 10px;
+                width: auto;
+            }
+
+            .link1
+            {
+            	border-bottom: 2px solid red;
+            }
+
+            .bockmessage{
+                display: flex;
+               justify-content: center;
+            }
+
+                        .conteneur{
+                position:relative;
+                top: 190px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 750px;
+                padding: 10px;
+                background: #ffff;
+                box-sizing: border-box;
+                border-radius: 10px;
+                box-shadow: 0 15px 30px;
+            
+            }
+
+            .cercle{
+                width: 200px;
+                height: 200px;
+                background: url(cesar.jpg);
+                background-size: 100% 100%;
+                border-radius: 50%;
+                float: left;
+                shape-outside: circle();
+                margin: 30px;
+            }
+
+            .NLN
+            {
+                color: white;
+            }
+
+
+        </style>
+</head>
+<body class="Bodyjeanne">
+
+	<header>
+
+        <div class="COA">
+            <label class="PoliceCOA"> Call o</label> <img class="Imageof" src="imageonline-co-transparentimage (2).png" alt="Logo d'arcade" class="logo"> <label class="PoliceCOA">f Arcade</label>
+
+            <nav class="MenuNav">
+                <ul>
+                    <li class="LiensNav M1"> <a href="index.html">Acceuil</a> </li>
+                    <li class="LiensNav M2"> <a href="Chiffre de Cesar jeanne by Cecri.html"> Chiffre de césar </a></li>
+                    <li class="LiensNav M3"> <a href="Memory LÇo 2.0 by cecri.html"> Jeu des paires </a></li>
+                    <li class="LiensNav M4"> <a href="Juste prix de Cindy by cecri.html"> Juste prix </a></li>
+                    <li class="LiensNav M5"> <a href="drawer.html"> Pixel Drawer </a></li>
+                    <li class="LiensNav M6"> <a href="Simon.html"> Simon </a></li>
+                    <li class="LiensNav M7"> <a href="PageNotreEquipe.html"> Notre équipe </a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+    </header>
+    		
+  <div class="conteneur">
+            <div class="cercle"></div>
+            <h1>Le chiffre de César</h1>
+            <p>
+                En cryptographie, le chiffrement par décalage, aussi connu comme le chiffre de César ou le code de César (voir les différents noms), est une méthode de chiffrement très simple utilisée par Jules César dans ses correspondances secrètes (ce qui explique le nom « chiffre de César »).
+                Le texte chiffré s'obtient en remplaçant chaque lettre du texte clair original par une lettre à distance fixe, toujours du même côté, dans l'ordre de l'alphabet. Pour les dernières lettres (dans le cas d'un décalage à droite), on reprend au début. Par exemple avec un décalage de 3 vers la droite, A est remplacé par D, B devient E, et ainsi jusqu'à W qui devient Z, puis X devient A etc. Il s'agit d'une permutation circulaire de l'alphabet. La longueur du décalage, 3 dans l'exemple évoqué, constitue la clé du chiffrement qu'il suffit de transmettre au destinataire — s'il sait déjà qu'il s'agit d'un chiffrement de César — pour que celui-ci puisse déchiffrer le message. 
+                <a href="https://www.futura-sciences.com/sciences/questions-reponses/mathematiques-quest-ce-chiffrement-cesar-8032/"> Explications Futura Sciences</a>
+            </p>
+        </div>
+
+        <div class= bloc>
+
+            <div class="bockmessage">
+        	<div class="AZA">
+        	<label>entrez votre message ici</label><br>
+            <textarea id = "textNormal" cols = "50" rows = "10" placeholder="Entrez votre message ici"> </textarea>
+            </div>
+            
+            <div class="AZA">
+            <label class="NLN"> Votre message est nettoyé là </label><br>
+            <textarea id = "nettoy" cols = "50" rows = "10"> </textarea>
+            </div>
+            
+            </div> <br><br>
+
+            <input id = "decal" value = 3 size = 2/>
+            <button id ="coder"> Coder </button>
+            <br><br>
+            <h3>Voici votre message codé</h3>
+            <textarea id = "code" cols = "50" rows = "10"> </textarea>
+        </div>
+
+        <script>
+            
+            document.getElementById('textNormal').addEventListener('keyup', function () {nettoy.value = nettoyer(this.value)}, false);
+            document.getElementById('coder').addEventListener('click', function () {code.value = coder (nettoy.value, decal.value)} ,false);
+
+            // Nettoyage du message (enleve les accents, les caractères, les espaces)
+            function nettoyer (text) {
+                var accents = 'àâëéèêïîôüûç'
+                var sansAccents = 'aaeeeeiiouuc'
+                return [...text.toLowerCase()].map (a=>accents.includes(a) ? sansAccents[accents.indexOf(a)]: a) // on converti le text en minuscule et en tableau, pour chacune des lettres "a" on vérifie si elle est dans la variable accents et on la converti en sansAccents selon son index
+                .join('').replace (/[^a-z]/g, '').toUpperCase() // on join les lettre et on les met en majuscule
+            }
+
+            //fonction cesar
+            function cesar (caractere, decalage){
+            var lettre = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            return lettre [(+ decalage + lettre.indexOf(caractere) + 26) % 26]; // (decalage + le rang de la lettre ) % 26 pour trouver la lettre après le décalage
+            // le (+26) pour gérer les nombres négatifs
+            }
+            
+
+            // fonction coder
+            function coder (text, dec){
+                return [...text].map( c => cesar(c, dec)).join(" ");
+            }
+
+       </script>     
+        
+
+</body>
+</html>

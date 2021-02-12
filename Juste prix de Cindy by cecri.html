@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <title> Le Juste Prix </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PageDacceuil.css">
+    <head>   
+        <script>
+        //Le Juste Prix
+        function jeu() {
+        function nb_aleatoire(min, max)
+        {
+        var nb = min + (max-min+1)*Math.random();
+        return Math.floor(nb);
+        }
+         
+        //Initialisation
+        var nb_coup = 1;
+        var min = 1;
+        var max = 100;
+        var nombre = 5;
+        var nb = nb_aleatoire(min, max);
+         
+        while(nombre != nb) {
+        var nombre = prompt("Entrer un nombre [nombre de coup(s) : "+ nb_coup +"]" , "Nombre compris entre 1 et 100");
+        nb = 6;
+         
+        if(nombre == "Nombre compris entre 1 et 100") {//Si l(utilisateur appuis sur Ok sans toucher à rien
+        alert("Entrer un nombre entre 1 est 100");
+        continue;
+        }
+        if(nombre == null) {//Annuller
+        alert("Bye !!!");
+        break;
+        }
+        if(isNaN(nombre)) {//Caractere incorrect
+        alert("\"" + nombre + "\" Ce n'est pas un nombre");
+        continue;
+        }
+        if(nombre < 1) {//Nombre trop petit
+        alert(+ nombre + " C'est plus !");
+        continue;
+        }
+        if(nombre > 100) {//Nombre trop grand
+        alert(+ nombre + " C'est moins !");
+        continue;
+        }
+        if(nombre < nb) {//C'est plus !
+        alert("C'est plus !");
+        nb_coup ++;
+        }
+        if(nombre > nb) {//C'est moins !
+        alert("C'est moins !");
+        nb_coup ++;
+        }
+        if(nombre == nb) {//Gagné !
+        alert("Bravo le nombre mystère était "+ nb);
+        break;
+        }
+        }
+         
+        if(nombre != null) {//Si l'utilisateur n'a pas clicke sur "Annuler", on lui affiche le nombre de coups qu'il a fait
+        alert("Tu as gagné en "+ nb_coup +" coup(s)");
+        var image_gagne = document.getElementById("gagne");
+        image_gagne.src = "http://m.memegen.com/pdufvo.jpg";
+        }
+        }
+        </script>
+         
+        <body bgcolor="#CED8F6">
+	<header>
+
+        <div class="COA">
+            <label class="PoliceCOA"> Call o</label> <img class="Imageof" src="imageonline-co-transparentimage (2).png" alt="Logo d'arcade" class="logo"> <label class="PoliceCOA">f Arcade</label>
+
+            <nav class="MenuNav">
+                <ul>
+                    <li class="LiensNav M1"> <a href="index.html">Acceuil</a> </li>
+                    <li class="LiensNav M2"> <a href="Chiffre de Cesar jeanne by Cecri.html"> Chiffre de césar </a></li>
+                    <li class="LiensNav M3"> <a href="Memory LÇo 2.0 by cecri.html"> Jeu des paires </a></li>
+                    <li class="LiensNav M4"> <a href="Juste prix de Cindy by cecri.html"> Juste prix </a></li>
+                    <li class="LiensNav M5"> <a href="drawer.html"> Pixel Drawer </a></li>
+                    <li class="LiensNav M6"> <a href="Simon.html"> Simon </a></li>
+                    <li class="LiensNav M7"> <a href="PageNotreEquipe.html"> Notre équipe </a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+    </header>
+        <h1 style="text-align:center; text-decoration: underline "> Le Juste Prix </h1>
+        <p style="font-size:200%; text-align:center; font-weight: bold"> <a style="color:black; text-decoration:none" href="javascript:jeu()"> Jouer </a> </p>
+         
+        <p id="gagne" align="center"> <img src="javascript:document.getElementById('image_gagne').src" alt="" border=""> </p>
+         
+        </body>
+    </head>
+</html>

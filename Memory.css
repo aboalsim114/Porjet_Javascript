@@ -1,0 +1,265 @@
+img {
+    width: 50px;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+}
+
+#start {
+    z-index: 50;
+    background: url("https://webstockreview.net/images/clipart-puppy-paw-print-18.png"),center;
+    font : small-caps bold 20px 'Trebuchet MS';
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px black;    
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    position: fixed;
+    top: 35%;
+    left: 38%;
+}
+
+#change {
+    z-index: 50;
+    color: #444;
+    font : small-caps bold 14px 'Trebuchet MS';
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px black;    
+    border-radius: 20px;
+    width: 250px;
+    height: 45px;
+    position: fixed;
+    bottom: 10%;
+    left: 39%;
+}
+
+#memory {
+    z-index: 50;
+    color: white;
+    font : small-caps bold 60px 'Trebuchet MS';
+    position: fixed;
+    top: 20%;
+    left: 41%;
+}
+
+#lvl1 {
+    z-index: 50;
+    color: #444;
+    font : small-caps bold 14px 'Trebuchet MS';
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px black;    
+    border-radius: 20px;
+    width: 150px;
+    height: 75px;
+    position: fixed;
+    top: 40%;
+    left: 32%;
+}
+
+#lvl2 {
+    z-index: 50;
+    color: #444;
+    font : small-caps bold 14px 'Trebuchet MS';
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px black;    
+    border-radius: 20px;
+    width: 150px;
+    height: 75px;
+    position: fixed;
+    top: 40%;
+    right: 32%;
+}
+
+#score {
+    z-index: 50;
+    color: #444;
+    font : small-caps bold 14px 'Trebuchet MS';
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px black;    
+    border-radius: 20px;
+    width: 190px;
+    height: 20px;
+    position: fixed;
+    top: 22%;
+    left: 41%;
+}
+
+.none {
+    display: none;
+}
+
+#block {
+    border-radius: 20px;
+    width: 1200px;
+    height: 575px;
+    margin-left: 5%;
+    margin-top: 0%;
+    
+}
+
+.white {
+    background : url("https://cdn1.vectorstock.com/i/1000x1000/31/45/seamless-exotic-pattern-with-tigers-in-jungle-vector-26733145.jpg");   
+}
+
+.black {
+    background-color:none;
+}
+
+.grey {
+    background-color: black;
+    opacity:50%;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+.card {
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px black;
+    border-radius: 20px;
+    margin : 0 1%;
+    width: 120px;
+    height: 200px;
+}
+
+.return {
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.found.one {
+    background: url("https://cdn.pixabay.com/photo/2018/03/11/20/42/mammals-3218028__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.return.one {
+    background: url("https://cdn.pixabay.com/photo/2018/03/11/20/42/mammals-3218028__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.found.two {
+    background: url("https://cdn.pixabay.com/photo/2018/09/20/12/01/koala-3690664__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.return.two {
+    background: url("https://cdn.pixabay.com/photo/2018/09/20/12/01/koala-3690664__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.found.three {
+    background: url("https://cdn.pixabay.com/photo/2018/03/26/20/49/tiger-3264048__340.jpg");
+    background-position-x: 40%;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.return.three {
+    background: url("https://cdn.pixabay.com/photo/2018/03/26/20/49/tiger-3264048__340.jpg");
+    background-position-x: 40%;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.found.four {
+    background: url("https://cdn.pixabay.com/photo/2014/12/12/19/45/lion-565820__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.return.four {
+    background: url("https://cdn.pixabay.com/photo/2014/12/12/19/45/lion-565820__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.found.five {
+    background: url("https://media.istockphoto.com/photos/african-elephant-baby-picture-id469623632?b=1&k=6&m=469623632&s=170667a&w=0&h=bv1daA02NUlLvPwKzSiUDnLXRp-kfPXDByihPD77yyw=");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.return.five {
+    background: url("https://media.istockphoto.com/photos/african-elephant-baby-picture-id469623632?b=1&k=6&m=469623632&s=170667a&w=0&h=bv1daA02NUlLvPwKzSiUDnLXRp-kfPXDByihPD77yyw=");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.found.six {
+    background: url("https://cdn.pixabay.com/photo/2018/02/23/14/37/fauna-3175678__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.return.six {
+    background: url("https://cdn.pixabay.com/photo/2018/02/23/14/37/fauna-3175678__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.found.seven {
+    background: url("https://cdn.pixabay.com/photo/2018/06/30/17/45/tit-3508070__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+.return.seven {
+    background: url("https://cdn.pixabay.com/photo/2018/06/30/17/45/tit-3508070__340.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 120px;
+    height: 200px;
+}
+
+

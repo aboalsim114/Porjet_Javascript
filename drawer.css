@@ -1,0 +1,41 @@
+/* page */
+
+*{
+    text-align: center;
+}
+
+h1{font-family: 'Monoton', cursive;color: #fff;}
+
+
+body{
+    
+    background-image: linear-gradient(to right top, #960cd1, #7b19c9, #601fbf, #4222b5, #1823aa);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* script */
+
+
+.diva{
+    border:solid 1px  ;
+    width:10px;
+    height:8px;
+    padding:0;
+    margin:0;
+  }
+  
+  #page{
+    width: 500px;
+    display:grid;
+    grid-template-columns:repeat(200,1fr);
+    
+    
+  }
+  
+  #reset{
+    background-color:red;
+  }
+
+ 

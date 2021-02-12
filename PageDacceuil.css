@@ -1,0 +1,198 @@
+.PageDacceuil
+{
+	background-image: url("arcade game 5.jpg");
+background-repeat: repeat;
+background-size: 100%;
+background-attachment: scroll;
+
+}
+
+.COA
+{
+
+text-align: center;
+
+}
+
+.logo
+{
+}
+
+.PoliceCOA
+{
+	font-family: Franklin Gothic Medium, Impact, "Arial Black", Arial, Georgia, Verdana, font1, font2, Comic Sans MS;
+	font-size: 44px;
+	letter-spacing: 4px;
+	height: auto;
+	margin: 21px 0px 0px 0px;
+	text-align: center;
+	
+}
+
+header
+{
+	background-color: ;
+
+}
+
+
+
+a
+{
+ color: black;
+ text-decoration: none;
+ background-color: ;
+ font-size: 16px;
+ font-family:Georgia, Verdana, font1, font2, Comic Sans MS;
+ text-shadow: 0px 2px 10px pink;
+
+ padding: 0 5px;
+
+}
+
+.MenuNav
+{
+	background-color: ;
+	padding: 0.5px;
+
+
+}
+
+
+nav .LiensNav
+{
+ list-style-type: none;
+ display: inline-block;
+border-bottom: 2px solid transparent;/*pour eviter que les textes en dessous bougent*/
+}
+
+.LiensNav
+{
+
+
+}
+
+nav
+{
+
+
+}
+
+.M1, .M2, .M3, .M4, .M5, .M6 
+{
+		
+}
+
+
+
+
+
+
+
+
+.MenuNav .M1:hover
+{
+	border-bottom: 2px solid green;
+
+}
+
+.MenuNav .M2:hover
+{
+	border-bottom: 2px solid yellow;
+
+}
+
+.MenuNav .M3:hover
+{
+	border-bottom: 2px solid red;
+
+}
+.MenuNav .M4:hover
+{
+	border-bottom: 2px solid white;
+
+}
+.MenuNav .M5:hover
+{
+	border-bottom: 2px solid blue;
+
+}
+
+.MenuNav .M6:hover
+{
+	border-bottom: 2px solid tomato;
+
+}
+
+.MenuNav .M7:hover
+{
+	border-bottom: 2px solid rgb(47,79,79);
+
+}
+
+
+.M1 a:hover
+{
+	color: ;
+	background-color: rgba(0, 128, 0, 0.15);
+}
+
+.M2 a:hover
+{
+	color: ;
+	background-color: rgba(255, 255, 0, 0.15);
+}
+
+
+.M3 a:hover
+{
+	color: ;
+	background-color: rgba(255, 0, 0, 0.15);
+}
+
+.M4 a:hover
+{
+	color: ;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.M5 a:hover
+{
+	color:;
+	background-color: rgba(25, 25, 112, 0.15);
+}
+
+.M6 a:hover
+{
+	color:;
+	background-color: rgba(128, 0, 128, 0.15);
+}
+
+.M7 a:hover
+{
+	color:;
+	background-color: rgba(47,79,79,0.15);
+}
+
+.Portofolio
+{
+
+}
+
+
+.NotreEquipe
+{
+display:grid;
+    grid-template-columns:repeat(1,1fr);
+}
+
+
+.PhotosEquipe
+{
+width:200px;
+height: 200px;
+      display:flex;
+      flex-direction: column;
+}
+
+
